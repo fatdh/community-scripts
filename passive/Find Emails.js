@@ -18,7 +18,7 @@ function scan(ps, msg, src) {
 
 	// lets build a regular expression that can find email addresses
 	// the regex must appear within /( and )/g
-    re = /([a-zA-Z0-9.#?$*_\+-]+@[a-zA-Z0-9.#?$*_-]+.[a-zA-Z0-9.-]+)/g
+    re = /([a-zA-Z0-9.#?$*_\+-]+@[a-zA-Z0-9.#?$*_-]+\.[a-zA-Z0-9.-]+)/g
 
 	// we need to set the url variable to the request or we cant track the alert later
     url = msg.getRequestHeader().getURI().toString();
